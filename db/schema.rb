@@ -14,6 +14,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_07_074125) do
   create_table "articles", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title", null: false, comment: "タイトル"
     t.text "text", null: false, comment: "本文"
+    t.boolean "comment_flg", comment: "コメント有効フラグ"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
