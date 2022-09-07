@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.all
+    @articles = Article.eager_load(:comments)
   end
 end
