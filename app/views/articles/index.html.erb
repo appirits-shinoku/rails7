@@ -1,0 +1,6 @@
+<% @articles.each do |article| %>
+  <h3><%=  h article.title %></h3>
+  <% article.comments.each do |comment| %>
+  <h6><%=  h comment.contents %></h6>
+  <% end %>
+<% end %>
