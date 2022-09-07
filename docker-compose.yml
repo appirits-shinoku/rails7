@@ -6,7 +6,6 @@ services:
       MYSQL_ROOT_PASSWORD: mysql
       MYSQL_USER: mysql
       MYSQL_PASSWORD: mysql
-      MYSQL_DATABASE: rails7
     ports:
       - "3306:3306"
     volumes:
