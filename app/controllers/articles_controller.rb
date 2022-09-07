@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.all
+    @articles = Article.preload(:comments)
   end
 end
